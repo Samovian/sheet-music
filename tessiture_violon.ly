@@ -10,6 +10,10 @@
     g^"sol" a_"la" b^"si" c_"do"
     d^"ré" e_"mi" f^"fa" g_"sol"
     a^"la" b_"si" c^"do" d_"ré"
+    e^"mi" f_"fa" g^"sol" a_"la"
+    b^"si" c_"do" d^"ré" e_"mi"
+    f^"fa" g_"sol" a^"la" b_"si"
+    c^"do" d_"ré" e^"mi"
   }
 
   \layout {}
