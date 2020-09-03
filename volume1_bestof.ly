@@ -81,19 +81,25 @@ GotoCoda = {
 }
 
 \score {
-\header { piece = "L'Ami" }
-  \relative la'' {
+\header { piece = "Ah, vous dirai-je Maman" }
+  \relative la' {
     \numericTimeSignature
     \time 4/4
     \key la \major
-    fad4^1\mf fad4 mi4 mi4
-    fad4^1 sold4^2 la4 la,4
-    fad'4 fad4 mi4 mi4
-    fad8 mi8 fad8 sold8 la2
-    \Fine
-    \bar "|."
-    re,2 dod4 la fad' fad mi2 re4 re dod la fad' sold mi2
-    \DCfine
+    la4\mf la mi' mi 
+    fad fad fad2
+    re8 re re re dod4 dod
+    si si la2
+    mi'4 mi re re
+    dod dod si2
+    mi4 mi re re
+    dod dod si2
+    la8\f la la la
+    mi'4 mi8 mi8
+    fad4 fad mi2
+    re8 re re re
+    dod4 dod
+    si si la2
     \bar "||"
   }
   \layout {}
