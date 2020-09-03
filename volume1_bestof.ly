@@ -25,7 +25,7 @@ DScoda = {
 
 Fine = {
   \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
-  \mark \markup {\italic "Fine" }
+  \mark \markup { \italic "Fine" }
 }
 
 GotoCoda = {
@@ -45,6 +45,7 @@ GotoCoda = {
   \relative la' {
     \numericTimeSignature
     \time 2/4
+    \key la \major
     la8 si8 dod8 la8
     re8 dod8 si8 re8
     dod8 mi8 re8 dod8
@@ -64,14 +65,35 @@ GotoCoda = {
   \relative la'' {
     \numericTimeSignature
     \time 4/4
-    fad4 fad4 mi4 mi4
+    \key la \major
+    fad4^1\mf fad4 mi4 mi4
     fad4^1 sold4^2 la4 la,4
     fad'4 fad4 mi4 mi4
     fad8 mi8 fad8 sold8 la2
     \Fine
     \bar "|."
     re,2 dod4 la fad' fad mi2 re4 re dod la fad' sold mi2
-    \DCfine 
+    \DCfine
+    \bar "||"
+  }
+  \layout {}
+  \midi {}
+}
+
+\score {
+\header { piece = "L'Ami" }
+  \relative la'' {
+    \numericTimeSignature
+    \time 4/4
+    \key la \major
+    fad4^1\mf fad4 mi4 mi4
+    fad4^1 sold4^2 la4 la,4
+    fad'4 fad4 mi4 mi4
+    fad8 mi8 fad8 sold8 la2
+    \Fine
+    \bar "|."
+    re,2 dod4 la fad' fad mi2 re4 re dod la fad' sold mi2
+    \DCfine
     \bar "||"
   }
   \layout {}
