@@ -1,3 +1,38 @@
+DSfine = {
+  \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
+  \mark \markup { \small "D.S. al fine" }
+}
+
+DS = {
+  \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
+  \mark \markup { \small "D.S." }
+}
+
+DCfine = {
+  \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
+  \mark \markup { \small "D.C. al fine" }
+}
+
+DCcoda = {
+  \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
+  \mark \markup { \small "D.C. al coda" }
+}
+
+DScoda = {
+  \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
+  \mark \markup { \small "D.S. al coda" }
+}
+
+Fine = {
+  \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
+  \mark \markup {\italic "Fine" }
+}
+
+GotoCoda = {
+  \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
+  \mark \markup { \small \musicglyph #"scripts.coda" }
+}
+
 \header {
   title = "Je joue du violon! volume 1"
   composer = "Jaap van Elst, Wim Meuris & Gunter Van Rompaey"
@@ -30,9 +65,14 @@
     \numericTimeSignature
     \time 4/4
     fad4 fad4 mi4 mi4
-    fad4^1
-
+    fad4^1 sold4^2 la4 la,4
+    fad'4 fad4 mi4 mi4
+    fad8 mi8 fad8 sold8 la2
+    \Fine
     \bar "|."
+    re,2 dod4 la fad' fad mi2 re4 re dod la fad' sold mi2
+    \DCfine 
+    \bar "||"
   }
   \layout {}
   \midi {}
