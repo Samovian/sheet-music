@@ -106,3 +106,31 @@ GotoCoda = {
   \midi {}
 }
 
+\score {
+\header { piece = "Chanson de printemps" }
+  \relative la'' {
+    \numericTimeSignature
+    \time 2/4
+    \key la \major
+    la8\f\downbow la16 la16 sold8 mi
+    fad4 mi
+    re8\upbow re16 re dod8 la
+    si4 r4
+    la'8\downbow la16 la16 sold8 mi
+    fad4 mi
+    re8 re16 re dod8 si
+    la4 r4
+    re\downbow\mf re8 re
+    dod4 la
+    re mi8^4 re
+    dod si la4
+    la'8 la16 la16 sold8 mi
+    fad4 mi
+    re8\upbow re16 re dod8 si
+    la\mf r4
+    \bar "||"
+  }
+  \layout {}
+  \midi {}
+}
+
