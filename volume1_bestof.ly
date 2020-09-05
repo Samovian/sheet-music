@@ -25,7 +25,7 @@ DScoda = {
 
 Fine = {
   \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
-  \mark \markup { \italic "Fine" }
+  \mark \markup { \small "Fine" }
 }
 
 GotoCoda = {
@@ -100,7 +100,7 @@ GotoCoda = {
     re8 re re re
     dod4 dod
     si si la2
-    \bar "||"
+    \bar "|."
   }
   \layout {}
   \midi {}
@@ -128,9 +128,32 @@ GotoCoda = {
     fad4 mi
     re8\upbow re16 re dod8 si
     la\mf r4
-    \bar "||"
+    \bar "|."
   }
   \layout {}
   \midi {}
 }
 
+\score {
+\header { piece = "Pour Carrie" }
+  \relative la' {
+    \numericTimeSignature
+    \time 4/4
+    \key la \major
+    re2 la
+    si4 la8 si fad4 re
+    re'2 la
+    si4 la8 si dod2
+    re4\< re8 mi fad \! la \> fad mi \!
+    re4 si8 \< dod re \! fad \> re dod \!
+    si4 sold8 \< la si \! re \> si la \!
+    mi4 sold8 \< si dod2 \!
+    re2 la
+    si4 la8 si fad2
+    la2 mi'
+    fad4-"ritenuto" fad8 mi re2 
+    \bar "|."
+  }
+  \layout {}
+  \midi {}
+}
