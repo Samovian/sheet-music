@@ -157,3 +157,24 @@ GotoCoda = {
   \layout {}
   \midi {}
 }
+
+
+\score {
+\header { piece = "Cocotte en papier" }
+  \relative la' {
+    \numericTimeSignature
+    \time 4/4
+    \key la \major
+    mi'4 sold si^4 sold
+    la8 la fad4 sold8 sold mi4
+    mi sold si^4 sold
+    la8 la fad fad mi4 r4
+    fad8\downbow fad fad fad fad sold la4
+    sold8 sold sold sold sold la si4
+    mi,4 sold si sold
+    la8 la fad fad mi4 r4
+    \bar ":|."
+  }
+  \layout {}
+  \midi {}
+}
