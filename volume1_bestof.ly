@@ -178,3 +178,27 @@ GotoCoda = {
   \layout {}
   \midi {}
 }
+
+\score {
+\header { piece = "Marche extraite de la Cantate du paysan J.-S. Bach" }
+  \relative la' {
+    \numericTimeSignature
+    \time 4/4
+    \key la \major
+    \partial 4 la8(\mf\upbow si)
+    \repeat volta 2 {     
+    dod4 dod4 dod4 re8( dod8)
+    si4 si si dod
+    re dod8( si) dod4 si8( la)| }
+    \alternative {
+      {la2. la8( si)}
+      {la2. mi'4}
+    }
+
+    \bar "|."
+  }
+  \layout {}
+  \midi {}
+}
+
+
