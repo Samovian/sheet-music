@@ -191,8 +191,18 @@ GotoCoda = {
     si4 si si dod
     re dod8( si) dod4 si8( la)| }
     \alternative {
-      {la2. la8( si)}
-      {la2. mi'4}
+      {la2. \breathe la8( si)}
+      {la2. \breathe mi'4\f}
+    }
+    \repeat volta 2 {
+    la mi mi mi fad mi mi mi
+    mi fad8( mi) fad( mi) re( dod)
+    si2.\> \breathe la8\mf( si)
+    dod4 si8( dod) re( dod) si( la) si( la) si( dod) si4 dod re dod8( si) dod4 si8( la)
+    }
+    \alternative {
+      {la2. \breathe mi4}
+      {la2. r4}
     }
 
     \bar "|."
