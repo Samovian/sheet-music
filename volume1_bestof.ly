@@ -212,3 +212,36 @@ GotoCoda = {
 }
 
 
+\score {
+\header { piece = "Chant d'amour" }
+  \relative la' {
+    \numericTimeSignature
+    \time 4/4
+    \key do \major
+    re4\mf(\downbow la) fa( la)
+    do( la) sol( la)
+    si( la) si( sol)
+    la2 do2
+    re4( la) fa( la)
+    si( la) sol( la)
+    do( la) sol( la^0)
+    re2 re2 \breathe
+    \Fine
+    \bar "|."
+    fa4\f( re) la( fa')
+    mi^0( do) la( mi'^0)
+    la,2 la'
+    fa4( la) fa( re)
+    mi( la) mi( do)
+    re( fa) mi\>( re)
+    do( si)
+    la2 \! \breathe
+    \DCfine
+    \bar "||"
+  }
+  \layout {}
+  \midi {}
+}
+
+
+
