@@ -211,30 +211,30 @@ GotoCoda = {
   \midi {}
 }
 
-
 \score {
 \header { piece = "Chant d'amour" }
   \relative la' {
     \numericTimeSignature
     \time 4/4
-    \key do \major
-    re4\mf(\downbow la) fa( la)
-    do( la) sol( la)
+    \key re \major
+    re4\mf(\downbow la) fad( la)
+    dod( la) sol( la)
     si( la) si( sol)
-    la2 do2
-    re4( la) fa( la)
+    la2 dod2
+    re4( la) fad( la)
     si( la) sol( la)
-    do( la) sol( la^0)
+    dod( la) sol( la^0)
     re2 re2 \breathe
     \Fine
     \bar "|."
-    fa4\f( re) la( fa')
-    mi^0( do) la( mi'^0)
+    fad4\f( re) la( fad')
+    mi^0( dod) la( mi'^0)
+    re( dod) si( mi^0)
     la,2 la'
-    fa4( la) fa( re)
-    mi( la) mi( do)
-    re( fa) mi\>( re)
-    do( si)
+    fad4( la) fad( re)
+    mi( la) mi( dod)
+    re( fad) mi\>( re)
+    dod( si)
     la2 \! \breathe
     \DCfine
     \bar "||"
@@ -243,5 +243,52 @@ GotoCoda = {
   \midi {}
 }
 
+\score {
+\header { piece = "Alouette" }
+  \relative la' {
+    \numericTimeSignature
+    \time 4/4
+    \key la \major
+    la4.\mf\downbow si8\upbow dod4\downbow dod
+    si8( la) si( dod) la4 mi
+    la4.\downbow si8\upbow dod4 dod4
+    si8( la) si dod la2
+    la8 la la la la( dod) mi4^4
+    mi8^0 fad mi re dod( si) la4
+    mi'8^4 mi mi4 mi,8 mi mi4
+    mi'^4\> re dod si
+    la4.\downbow\mf si8\upbow dod4\downbow dod
+    si8( la) si( dod) la4 mi
+    la4.\downbow si8\upbow dod4 dod
+    si8( la) si( dod)
+    la2
+    \bar "|."
+  }
+  \layout {}
+  \midi {}
+}
 
+
+\score {
+\header { piece = "Fado gravo" }
+  \relative la' {
+    \numericTimeSignature
+    \time 4/4
+    \key do \major
+    \partial 4 mi4\mf\upbow
+    la4 si do si8( la)
+    si4( la) mi( re)
+    mi fa mi re
+    mi2. \breathe mi4\<
+    la si do\! si8( la)
+    si4( mi^0) mi^0(si)
+    do si mi^4 la\>
+    mi fa mi mi\!
+    fa( la) do( si)
+    la2.
+    \bar ":|"
+  }
+  \layout {}
+  \midi {}
+}
 
