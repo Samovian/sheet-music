@@ -282,11 +282,11 @@ GotoCoda = {
     mi2. \breathe mi4\<
     la si do\! si8( la)
     si4( mi^0) mi^0(si)
-    do si mi^4 la\>
+    do si mi^4 la,\>
     mi fa mi mi\!
     fa( la) do( si)
-    la2.
-    \bar ":|"
+    la2. s4
+    \bar ":|."
   }
   \layout {}
   \midi {}
