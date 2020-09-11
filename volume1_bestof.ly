@@ -23,6 +23,11 @@ DScoda = {
   \mark \markup { \small "D.S. al coda" }
 }
 
+DaCapo = {
+  \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
+  \mark \markup { \small "Da Capo" }
+}
+
 Fine = {
   \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
   \mark \markup { \small "Fine" }
@@ -268,7 +273,6 @@ GotoCoda = {
   \midi {}
 }
 
-
 \score {
 \header { piece = "Fado gravo" }
   \relative la' {
@@ -292,3 +296,30 @@ GotoCoda = {
   \midi {}
 }
 
+\score {
+\header { piece = "Kol Dodi" }
+  \relative la {
+    \numericTimeSignature
+    \time 2/4
+    \key do \major
+    re8^4\downbow re16( do) re4
+    re8 re16( do) re4
+    re8^0 mi16( fa) sol8 fa16( mi)
+    fa8( mi) re4
+    \repeat volta 2
+    { 
+      re8 la' la la
+      sol sol fa16( mi) re8
+      mi8 fa sol fa16( mi)
+    }
+    \alternative
+    {
+      { fa8 sol la4^4 \breathe}
+      { fa8 mi re4 \breathe}
+    }
+    \DaCapo
+    \bar "|."
+  }
+  \layout {}
+  \midi {}
+}
