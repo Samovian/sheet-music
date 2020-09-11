@@ -302,7 +302,7 @@ GotoCoda = {
     \numericTimeSignature
     \time 2/4
     \key do \major
-    re8^4\downbow re16( do) re4
+    re8^4\downbow\f re16( do) re4
     re8 re16( do) re4
     re8^0 mi16( fa) sol8 fa16( mi)
     fa8( mi) re4
