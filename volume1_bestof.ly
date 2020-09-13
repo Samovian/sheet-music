@@ -350,3 +350,30 @@ GotoCoda = {
   \layout {}
   \midi {}
 }
+
+\score {
+\header { piece = "Le ménestrel" }
+  \relative la' {
+    \numericTimeSignature
+    \time 6/8
+    \key sol \major
+    sol\mf sol-.\upbow( sol-.\upbow)
+    si2 re,4 re' do8 si la sol
+    la4 la8(si) la4-.
+    do do-.\upbow( do-.\upbow)
+    si2 sol4
+    re4 sol8 la si do
+    re2. \breathe
+    sol4 sol-.\upbow( sol-.\upbow)
+    fa2 mi4
+    re si8 do re mi^4
+    re2.
+    do4 si-.\upbow( la-.\upbow)
+    si2 do4
+    re4 si8 do la( si)
+    sol2.
+    \bar "|."
+  }
+  \layout {}
+  \midi {}
+}
