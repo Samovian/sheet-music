@@ -184,6 +184,8 @@ GotoCoda = {
   \midi {}
 }
 
+\pageBreak
+
 \score {
 \header { piece = "Marche extraite de la Cantate du paysan J.-S. Bach" }
   \relative la' {
